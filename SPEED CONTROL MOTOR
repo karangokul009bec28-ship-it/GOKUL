@@ -1,0 +1,12 @@
+from gpiozero import PWMOutputDevice
+from time import sleep
+
+# Define the pin connected to the motor driver's Enable pin
+motor = PWMOutputDevice(18) 
+
+# Speed is a value between 0.0 (off) and 1.0 (full speed)
+motor.value = 0.5  # 50% speed
+sleep(2)
+motor.value = 0.8  # 80% speed
+sleep(2)
+motor.off()
