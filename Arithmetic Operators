@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    # Reading integers from STDIN
+    a = int(input())
+    b = int(input())
+    
+    # 1. Print the sum of the two numbers
+    print(a + b)
+    
+    # 2. Print the difference (first - second)
+    print(a - b)
+    
+    # 3. Print the product of the two numbers
+    print(a * b)
